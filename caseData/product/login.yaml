@@ -1,0 +1,8 @@
+- casename: 用户登录
+  caseid: login01
+  http:
+    method: POST_JSON
+    path: http://www.baidu.com/bossbff/employee/login
+  data:
+    account: admin
+    password: admin
