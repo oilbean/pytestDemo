@@ -1,0 +1,30 @@
+- casename: popup1
+  caseid: case1
+  http:
+    method: POST
+    path: /api/popup
+  headers:
+    Content-Type: application/json
+  data:
+    signDays: 1
+    userID: 10000
+    platform: 1
+    type: 2
+
+  expected:
+    popupType: 1
+
+- casename: popup2
+  caseid: case2
+  http:
+    method: POST
+    path: /api/popup
+  headers:
+    Content-Type: application/json
+  data:
+    signDays: 2
+    userID: 10000
+    platform: 1
+    type: 2
+  expected:
+    popupType: 1
